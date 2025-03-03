@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Light mode colors (default) */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  color-scheme: light;
+}
+
+/* Dark mode colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    color-scheme: dark;
+  }
+}
+
+/* Force light mode for all browsers */
+:root[color-scheme="light"] {
+  --background: #ffffff;
+  --foreground: #171717;
+  color-scheme: light;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-outfit), Helvetica, sans-serif;
+}
