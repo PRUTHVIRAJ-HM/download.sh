@@ -31,7 +31,7 @@ const Body = () => {
         >
           Get Started
         </button>
-        <p className='mt-4 text-lg underline'>Version 1.1 beta</p>
+        <p className='mt-4 text-lg underline'>Version 1.2 beta</p>
       </div>
 
       {/* Dark Overlay when modal is open */}
